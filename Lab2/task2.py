@@ -51,6 +51,12 @@ def get_distance(y_model, y_regr):
 def plot_linear_regression(text, x, y):
     y_mnk = MNK(x, y)
     y_mnm = MNM(x, y)
+    print("\hline")
+    print("$x $ & MNK & MNM \\")
+    print("\hline")
+    for i in range(len(y_mnm)):
+        print(x[i], " & ", abs(y[i] - y_mnk[i]), "&", abs(y[i] - y_mnm[i]), "\\")
+
     y_dist_mnk = get_distance(y, y_mnk)
     y_dist_mnm = get_distance(y, y_mnm)
     print('mnk distance', y_dist_mnk)

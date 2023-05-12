@@ -38,6 +38,7 @@ def task4(x_set: list, n_set: list):
 
         print("т: %i" % (n))
         print("m: %.2f, %.2f" % (m1[0], m1[1]))
+        print("twin: [[%.2f, %.2f],[%.2f, %.2f]]" % (m1[0]-s1[0], m1[0]+s1[0], m1[1]-s1[1], m1[1]+s1[1]))
         print("sigma: %.2f, %.2f" % (s1[0], s1[1]))
 
     draw_result(x_set, m_all, s_all)
@@ -64,6 +65,7 @@ def task4_asymp(x_set: list, n_set: list):
         s_all.append(s_as)
 
         print("m asymptotic :%.2f, %.2f" % (m_as[0], m_as[1]))
+        print("twin asymptotic: [[%.2f, %.2f],[%.2f, %.2f]]" % (m_as[0] - s_as[0], m_as[0] + s_as[0], m_as[1] - s_as[1], m_as[1] + s_as[1]))
         print("sigma asymptotic: %.2f, %.2f" % (s_as[0], s_as[1]))
     draw_result(x_set, m_all, s_all)
     return

@@ -39,7 +39,7 @@ def task2_builder():
     plot_linear_regression('Perturbations', x, y)
     return
 
-#task2_builder()
+task2_builder()
 
 # TASK 3 CODE
 def task3_builder():
@@ -70,4 +70,4 @@ def task4_builder():
     task4_asymp(x_set, n_set)
     return
 
-task4_builder()
+#task4_builder()

@@ -67,6 +67,9 @@ def build_ellipse(x, y, ax, n_std=3.0, **kwargs):
     rad_x = np.sqrt(1 + pearson)
     rad_y = np.sqrt(1 - pearson)
 
+    print('\n'+'rad_x = '+str(rad_x))
+    print('\n' + 'rad_y = ' + str(rad_y))
+
     ellipse = Ellipse((0, 0), width=rad_x * 2, height=rad_y * 2, facecolor='none', **kwargs)
 
     scale_x = np.sqrt(cov[0, 0]) * n_std
